@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Primeiro Website</title>
 </head>
+
 <body>
-   <div class="">
+    <div class="">
         <label>Nome</label> <br>
         <input type="text" placeholder="Digite aqui o seu nome" />
-   </div> 
-</body>
-</html>
+        <button id="btn">Click me</button>
+    </div>
+    <p id="output-name"></p>
+    <script>
+        const nameInput = document.getElementById("input-name")
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", () => {
+            console.log(nameInput);
+        });
+    </script>
+    </body>
+    </html>
